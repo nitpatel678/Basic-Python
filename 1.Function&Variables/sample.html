@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .red {
+            text-align: center;
+        }
+        * {
+            background-color: #d7bde2;
+            margin: 0; /* Remove default margin */
+            padding: 0; /* Remove default padding */
+        }
+        .t {
+            text-align: center;
+        }
+        .highlight {
+            background-color: orange;
+            border-radius: 10px;
+            padding: 5px;
+        }
+        .image-container {
+            margin-top: 10px;
+            display: flex; /* Align images horizontally */
+            gap: 10px; /* Space between images */
+            padding: 0 10px; /* Space on the left and right sides */
+            box-sizing: border-box; /* Include padding in the width calculation */
+            width: calc(100% - 20px); /* Full width minus left and right padding */
+            overflow-x: auto; /* Handle overflow for responsiveness */
+        }
+        .image-container a {
+            position: relative;
+            display: block;
+            width: 300px; /* Fixed width for images */
+            height: auto; /* Maintain aspect ratio */
+            overflow: hidden; /* Hide overflow to maintain dimensions */
+        }
+        .image-container img {
+            border-radius: 15px; /* Rounded corners */
+            transition: transform 0.6s; /* Smooth transition for hover effect */
+            width: 100%; /* Full width to fit container */
+            height: auto; /* Maintain aspect ratio */
+        }
+        .image-container a:hover img {
+            transform: rotateY(180deg); /* Flip effect */
+        }
+        .image-container a::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: url('https://img10.joyreactor.com/pics/post/erotic-18+-breasts-8227743.png') no-repeat center center; /* Default image for first link */
+            background-size: cover;
+            border-radius: 15px; /* Same rounded corners */
+            transform: rotateY(180deg); /* Flip effect for the replacement image */
+            transition: transform 0.6s; /* Smooth transition for hover effect */
+        }
+        .image-container a:nth-child(2)::before {
+            background: none; /* No replacement image for second link */
+        }
+        .image-container a:nth-child(3)::before {
+            background: url('https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/4ec74923-b58b-4816-a472-eaf87fed3640/dgvt1pa-4860eaca-17b8-4779-a191-f4e6e96496a0.jpg/v1/fill/w_894,h_894,q_70,strp/lana_rhoades_en_lencera_sexy__by_luissantiagoch_dgvt1pa-pre.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9MTAyNCIsInBhdGgiOiJcL2ZcLzRlYzc0OTIzLWI1OGItNDgxNi1hNDcyLWVhZjg3ZmVkMzY0MFwvZGd2dDFwYS00ODYwZWFjYS0xN2I4LTQ3NzktYTE5MS1mNGU2ZTk2NDk2YTAuanBnIiwid2lkdGgiOiI8PTEwMjQifV1dLCJhdWQiOlsidXJuOnNlcnZpY2U6aW1hZ2Uub3BlcmF0aW9ucyJdfQ.EeG9PqnrxX8a3u5ZOcOjCNqOXkRFEyStaIv6ga4It1U') no-repeat center center; /* Default image for third link */
+        }
+        .image-container a:hover::before {
+            transform: rotateY(0deg); /* Reset the flip for the replacement image on hover */
+        }
+    </style>
+</head>
+<body>
+    <h1 class="red">Memes <span class="highlight">Hub</span></h1>
+    <h3 class="t">Welcome to era of fun!</h3>
+    <div class="image-container">
+        <a href="https://en.wikipedia.org/wiki/File:Mia_Malkova_2016.jpg" target="_blank">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/e/e4/Mia_Malkova_2016.jpg" alt="Mia Malkova">
+        </a>
+        <a href="https://image.civitai.com/xG1nkqKTMzGDvpLrqFT7WA/2fec82f3-8545-4385-bff9-be0660f67a82/original=true,quality=90/123123143560029-2782779127-masterpiece,%20stunning%20%20portrait%20photo%20of%20leah%20woman,%20in%20a%20field,%2016mm,__lora_LeahGottidogu2_1_.jpeg" target="_blank">
+            <img src="https://image.civitai.com/xG1nkqKTMzGDvpLrqFT7WA/2fec82f3-8545-4385-bff9-be0660f67a82/original=true,quality=90/123123143560029-2782779127-masterpiece,%20stunning%20%20portrait%20photo%20of%20leah%20woman,%20in%20a%20field,%2016mm,__lora_LeahGottidogu2_1_.jpeg" alt="Leah Woman">
+        </a>
+        <a href="https://c4.wallpaperflare.com/wallpaper/244/899/830/lana-rhoades-model-women-blue-eyes-wallpaper-preview.jpg" target="_blank">
+            <img src="https://c4.wallpaperflare.com/wallpaper/244/899/830/lana-rhoades-model-women-blue-eyes-wallpaper-preview.jpg" alt="Lana Rhoades">
+        </a>
+    </div>
+</body>
+</html>
